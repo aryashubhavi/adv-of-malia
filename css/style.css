@@ -1,0 +1,223 @@
+/* =========================================================================================================
+Stylesheet: style.css
+Website: Butterflies
+Date created: 11th July 2012
+Copyright: Carter Digital
+Author(s): Tom Hare
+Comments: Main website stylesheet including all layout and typographical styling
+		  Based on normalize.css - http://github.com/necolas/normalize.css
+========================================================================================================= */
+
+/* == Standardising base elements and typography
+========================================================================================================= */
+html{font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background: #000;}
+
+html, button, input, select, textarea{font-family: Helvetica, Arial, sans-serif; font-size: 1em;}
+body{color: #7e602b; line-height: 1.3; margin: 0 auto; padding: 0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display: block;}
+
+::-moz-selection{background: #b3d4fc; text-shadow: none;}
+::selection{background: #b3d4fc; text-shadow: none;}
+
+a{color: #7e602b;}
+a:hover{color: #aa7e49;}
+a:focus{outline: thin dotted;}
+a:hover, a:active{outline: 0;}
+
+h1, h2, h3, h4, h5, h6{font-family: 'myriad-pro-condensed', sans-serif; color: #fff; font-weight: 400; line-height: 1; margin: 0 0 0.4em;}
+h1, .alpha{font-size: 2em;}
+h2, .beta{font-size: 1.625em; position: relative; background: url(../img/signum.png) no-repeat center left; padding: 0 0 0 25px; margin: 0 0 1em;}
+	h2 i, .beta i{position: absolute; right: 0; top: 14px; height: 1px; background: url(../img/h2-line.gif);}
+h3, .gamma{font-size: 1.625em;}
+h4, .delta{font-size: 1em;}
+h5, .epsilon{font-size: 1em; color: #375d89;}
+h6, .zeta{}
+
+p{margin: 0 0 1em;}
+
+b, strong{font-weight: bold;}
+
+blockquote{font-size: 1.375em; line-height: 1.1;}
+cite{display: block; font-size: 0.727em; line-height: 2;}
+
+hr{display: block; height: 1px; border: 0; border-top: 1px solid #d9d9d9; margin: 1em 0; padding: 0;}
+
+small{font-size: 0.75em;}
+
+sub, sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup{top: -0.5em;}
+sub{bottom: -0.25em;}
+
+ul, ol{margin: 1em 0; padding: 0 0 0 30px;}
+nav ul{padding: 0; margin: 0; list-style: none;}
+
+img{border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle;}
+
+table{border-collapse: collapse; border-spacing: 0;}
+td{vertical-align: top;}
+
+.cf:before, .cf:after, footer:before, footer:after{content: ""; display: table;}
+.cf:after, footer:after{clear: both;}
+.cf, footer{*zoom: 1;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.aLeft{text-align: left;}
+.aRight{text-align: right;}
+.aCenter{text-align: center;}
+
+/* == Layout styles
+========================================================================================================= */
+/* Header */
+header{position: relative; height: 600px; background: url(../img/poster.jpg) no-repeat top center;}
+	header .header-inner{position: relative; width: 940px; margin: 0 auto; left: 0; }
+	.header-inner-background{position:absolute;width:940px;bottom:25px;left: 765px; background-image: url(../img/transparent-fon.png);height: 472px;z-index:8;}
+		header .logo{position: absolute; width: 380px; height: 150px; top: 230px; left: 0; text-indent: -9999px; background: url(../img/logo.png) no-repeat; z-index: 2;}
+		header .watch{position: absolute; width: 164px; height: 39px; top: 400px; left: 0; text-indent: -9999px; background: url(../img/watch_trailer.png) no-repeat; z-index: 30;}
+		
+		header .return{position: absolute; width: 164px; height: 39px; top: 340px; left: 420px; text-indent: -9999px; background: url(../img/return_home.png) no-repeat; z-index: 30;}
+		#header-festivals {background: url(../img/bg-fest.jpg) no-repeat top center #000; height: 400px;}
+		
+		header .watch-trailer{position: absolute; width: 168px; height: 38px; top: 322px; left: 0; text-indent: -9999px; outline: 0;}
+		
+		header .official-seal{position: absolute; width: 136px; height: 134px; bottom: 40px; right: 32px; z-index: 9; background: url(../img/cinequest.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal2{position: absolute; width: 136px; height: 134px; bottom: 40px; right: -120px; z-index: 9; background: url(../img/dok-leipzig.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal3{position: absolute; width: 136px; height: 134px; bottom: 190px; right: 32px; z-index: 9; background: url(../img/miff.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal4{position: absolute; width: 136px; height: 134px; bottom: 190px; right: -120px; z-index: 9; background: url(../img/sitges.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal5{position: absolute; width: 136px; height: 134px; bottom: 340px; right: 32px; z-index: 9; background: url(../img/sydney-film-fastival-2013.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal6{position: absolute; width: 136px; height: 134px; bottom: 340px; right: -120px; z-index: 9; background: url(../img/stabarbara.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal7{position: absolute; width: 136px; height: 134px; bottom: 40px; right: -280px; z-index: 9; background: url(../img/GIFA.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal8{position: absolute; width: 136px; height: 134px; bottom: 190px; right: -280px; z-index: 9; background: url(../img/gifa2.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal9{position: absolute; width: 136px; height: 134px; bottom: 340px; right: -280px; z-index: 9; background: url(../img/pffm.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal10{position: absolute; width: 136px; height: 134px; bottom: 40px; right: -440px; z-index: 9; background: url(../img/pffm2.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal11{position: absolute; width: 136px; height: 134px; bottom: 190px; right: -440px; z-index: 9; background: url(../img/cikff.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal12{position: absolute; width: 136px; height: 134px; bottom: 340px; right: -440px; z-index: 9; background: url(../img/ciff.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal13{position: absolute; width: 136px; height: 134px; bottom: 40px; right: -600px; z-index: 9; background: url(../img/cicyff.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal14{position: absolute; width: 136px; height: 134px; bottom: 190px; right: -600px; z-index: 9; background: url(../img/kfifsf.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal15{position: absolute; width: 136px; height: 134px; bottom: 340px; right: -600px; z-index: 9; background: url(../img/insane.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal16{position: absolute; width: 136px; height: 134px; bottom: 40px; right: -760px; z-index: 9; background: url(../img/byff.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal17{position: absolute; width: 136px; height: 134px; bottom: 190px; right: -760px; z-index: 9; background: url(../img/bkf.png) no-repeat; text-indent: -9999px; outline: 0;}
+		header .official-seal18{position: absolute; width: 136px; height: 134px; bottom: 340px; right: -760px; z-index: 9; background: url(../img/ef.png) no-repeat; text-indent: -9999px; outline: 0;}
+header .official-seal19{position: absolute; width: 136px; height: 134px; bottom: 40px; right: 32px; z-index: 9; background: url(../img/nnff.png) no-repeat; text-indent: -9999px; outline: 0;}
+
+	header .hide{position: absolute; width: 136px; height: 134px; bottom: 340px; right: 100px; z-index: 9; background: url(../img/animasyros.png) no-repeat; text-indent: -9999px; outline: 0;}
+
+	header .top-bar{position: absolute; top: 0; left: 0; width: 100%; z-index: 9; height: 50px; line-height: 50px; font-family: 'myriad-pro-condensed', sans-serif; text-transform: uppercase; background: #000; background: rgba(0,0,0,0.6);}
+			header .top-bar .social{float: left; width: 30px; height: 29px; background: url(../img/top-bar-icons.gif) no-repeat; margin: 10px 5px 0 0; text-indent: -9999px;}
+			header .top-bar .tw{background-position: 0 0;}
+			header .top-bar .fb{background-position: -30px 0;}
+			header .top-bar .tbr{background-position: -60px 0; margin-right: 10px;}
+			
+		.video-mask{position: absolute; width: 120px; height: 550px; top: 0; z-index: 3;}
+		.mask-left{left: -50px; background: url(../img/video-mask-left.png) no-repeat 0 0;}
+		.mask-right{right: -50px; background: url(../img/video-mask-right.png) no-repeat 0 0;}
+		
+.frame{width: 100%; height: 62px; margin-top: -50px; background: url(../img/frame.jpg) top center; z-index: 2; text-align: center;}
+	.seal{display: inline-block; width: 138px; height: 160px; margin-top: -48px; z-index: 3;}
+
+.frame-festivals{width: 100%; height: 62px; margin-top: 40px; background: url(../img/frame.jpg) top center; z-index: 2; text-align: center;}
+
+/* Content and grid */
+.main{position: relative; background: url(../img/bg.jpg) no-repeat top center #000;}
+.main-inner{position: relative; width: 940px; margin: 130px auto 0;}
+.main-festivals {position: relative; background-color: #000;}
+.main-festivals .main-inner{margin: 10px auto 0;}
+	.synopsis{float: left; width: 460px; font-size: 0.875em;}
+		.synopsis h2 i{width: 360px;}
+	/*For Festivals page*/
+	.festivals{float: left; width: 100%; font-size: 0.875em;}
+		.festivals h2 i{width: 360px;}
+		.festivals-list {color: #fff; font-size: 1.625em;}
+.festivals-table {text-transform: uppercase; color:#000000;width: 100%;font-size: 12px;}
+	.festivals-table td{padding: 10px 10px 10px 10px;/*background-color:#fdfdfd;*/ border-bottom:15px solid #000000; letter-spacing: 2px; vertical-align: middle;min-height:50px;}
+	.festivals-table tr{background-color: #ffffff;min-height:47px;}
+	.festivals-table tr:hover {/*background: url(../img/star-gold.png) no-repeat center center #ffffff;*/ background-color:#fef7db;}
+	.festivals-table td:first-child {background-color:#c6d886; color:#8d793c;border-right:2px solid #8d793c;}
+	.festivals-table td:nth-child(3) {background-color: transparent;min-width:28px;}
+	.star {float:right; background: url(../img/star-gold.png) no-repeat center center; width:23px; height:22px;}
+	.show-hide-links {font-size: 12px;}
+	/*For Festivals page*/
+	.video-signup{float: right; width: 460px; font-size: 0.875em;}
+		.video-player{float: left; margin: 0 20px 10px 0; overflow: none;}
+		.signup{width: 440px; padding: 10px; margin: 10px 0 0; background: url(../img/wall.jpg); font-family: 'myriad-pro-condensed', sans-serif;}
+			.signup label{display: inline-block; width: 65px; color: #fff; font-size: 1.625em;}
+			.signup input{width: 300px; background: #2d2d2d; border: 0; font-family: 'myriad-pro-condensed', sans-serif; color: #7e602b; text-transform: uppercase; font-size: 1.375em; padding: 10px;}
+			.signup input:focus{border: 0; outline: 0;}
+			.signup input.submit{width: 40px; background: url(../img/signum.png) no-repeat center center #2d2d2d; margin: 0 0 0 5px; text-indent: -9999px;}
+	.gallery{position: relative; margin: 35px 0;}
+		.gallery h2 i{width: 803px;}
+		.gallery ul{list-style: none; margin: 0; padding: 0;}
+			.gallery li{float: left; margin: 0 17px 0 0;}
+			.gallery li.fourth{margin: 0;}
+				.gallery img{background: url(../img/wall.jpg); padding: 6px;}
+		.gallery .pager{position: absolute; top: 3px; right: 0; background: #000; padding: 0 0 0 10px;}
+				.gallery .pager a{float: left; display: inline; width: 22px; height: 21px; margin: 0 0 0 5px; outline: 0; background-image: url(../img/gallery/pager-sprite.png); background-repeat: no-repeat; background-position: -23px 0; text-indent: -9999px;}
+				.gallery .pager a.selected{background-position: 0 0;}
+	.twitter-feed{}
+		.twitter-feed h2 i{width: 810px;}
+		.feed, .follow{background: url(../img/wall.jpg); padding: 15px;}
+		.feed{float: left; width: 670px;}
+			.avatar{float: left; width: 50px; margin: 3px 0 0;}
+			.tweets{position: relative; float: right; width: 575px; padding: 15px; background: #252525; font-family: Georgia, serif; color: #fff; font-size: 0.813em; font-style: italic; line-height: 1.6;}
+				.tweets:before{position: absolute; content: ""; top: 12px; left: -8px; border-width: 8px 8px 8px 0; border-style: solid; border-color: transparent #252525;}
+				.tweets ul, .tweets li{list-style: none; margin: 0; padding: 0;}
+		.follow{float: right; width: 160px; padding: 15px;}
+			.follow .inner{background: #252525; font-family: 'myriad-pro-condensed', sans-serif; color: #fff; padding: 15px; font-size: 1.25em; line-height: 1;}
+			.follow a{color: #c2a548;}
+		
+	.sponsors{width: 940px; margin: 35px auto 0; font-family: 'myriad-pro-condensed', sans-serif; text-align: center; text-transform: uppercase;}
+		.sponsors p{margin: 35px 0 7px;}
+		.sponsor-logos{margin: 0 auto;}
+			.sponsor-logo{float: left; margin: 0 15px; background-image: url(../img/sponsor-logos.png); background-repeat: no-repeat; text-indent: -9999px; opacity: 0.6;}
+			.sponsor-logo:hover{opacity: 1;}
+			.turning-studios{width: 149px; height: 48px; background-position: 0 0; margin-top: 10px;}
+			.bondi{width: 69px; height: 70px; background-position: -150px -1px;}
+			.screen-aus{width: 278px; height: 50px; background-position: 0 -122px; margin-top: 9px;}
+			.carter{width: 68px; height: 68px; background-position: -1px -51px; margin-top: 1px;}
+			.gingerbread{width: 131px; height: 49px; background-position: -71px -72px; margin-top: 11px;}
+			.barnes{width: 70px; height: 70px; background-position: -219px 0;}
+			
+	.credits{font-weight: 300; text-align: center; font-size: 0.813em;}
+		.credits span{font-weight: 400; font-size: 1.308em;}
+		
+	.lamp{position: absolute; z-index: 2; top: -70px;}
+	.lamp1{width: 67px; height: 287px; left: -95px; -webkit-transform: rotate(-0.45deg); -webkit-transform-origin: 34px 0; -moz-transform: rotate(-0.45deg); -moz-transform-origin: 34px 0; -o-transform: rotate(-0.45deg); -o-transform-origin: 34px 0; -ms-transform: rotate(-0.45deg); -ms-transform-origin: 34px 0; transform: rotate(-0.45deg); transform-origin: 34px 0;}
+	.lamp2{width: 57px; height: 907px; right: -80px; -webkit-transform: rotate(-0.1deg); -webkit-transform-origin: 28px 0; -moz-transform: rotate(-0.1deg); -moz-transform-origin: 28px 0; -o-transform: rotate(-0.1deg); -o-transform-origin: 28px 0; -ms-transform: rotate(-0.1deg); -ms-transform-origin: 28px 0; transform: rotate(-0.1deg); transform-origin: 28px 0;}
+
+/* Footer */
+footer{position: relative; width: 980px; min-height: 789px; _height: 789px; background: url(../img/footer-bg.jpg) no-repeat top center; text-align: center; margin: 0 auto;}
+	footer .inner{position: absolute; width: 940px; bottom: 10px; left: 50%; margin-left: -470px; font-size: 0.688em; text-transform: uppercase; text-align: center; letter-spacing: 0.08em; line-height: 1.4;}
+.festivals-footer{min-height:150px; background-image:none;}
+	/* Letters */
+	.letters{position: absolute; width: 182px; height: 700px; top: 0; left: 50%; margin-left: -74px;}
+		.chimney{position: absolute; top: 135px; left: 0; z-index: 2;}
+		.letter{position: absolute; z-index: 1; top: 144px; left: 50%;}
+
+/* == Media queries
+========================================================================================================= */
+@media only screen and (max-device-width: 480px) {
+	.frame, .main, .sponsors, footer, footer .inner{width: 980px;}
+	.frame{text-align: center;}
+	footer{margin: 0 auto;}
+}
+
+/* == Miscellaneous text, image and other styles
+========================================================================================================= */
+
+	
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
